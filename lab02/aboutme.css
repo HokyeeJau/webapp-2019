@@ -8,7 +8,7 @@ ol>li::before{
 }
 .name {
     font-style: italic;
-    font-size: 50px;
+    font-size: 60px;
     margin-left: 20px;
 }
 .intro{
@@ -20,11 +20,32 @@ ol>li::before{
     height: 150px;
     align-items: center;
 }
-a{
+body a{
     color: #FF4F4F;
 }
-a:hover{
+body a:hover{
     text-decoration:underline;
+}
+a:link{
+    color:blue;
+    text-decoration: none;
+}
+a:active{
+    color:#F60;
+    text-decoration: underline;
+}
+a:visited{
+    color:yellow;
+}
+a>img:link{
+    outline-style: ridge;
+    outline-color: #F7931E;
+    outline-width: medium;
+}
+a>img:visited{
+    outline-style: none;
+    outline-color: #000000;
+    outline-width: inherit;
 }
 dt,em{
     color:#FFF86B;
@@ -132,7 +153,7 @@ dl{
 .reversed_order_listyle{
     list-style-type: lower-roman;
 }
-img.fav_fruits_photos{
+.fav_fruits_photos{
     width:150px;
     height:80pt;
     outline-style: ridge;
