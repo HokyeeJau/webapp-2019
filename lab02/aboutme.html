@@ -16,6 +16,12 @@
     <link href="aboutme.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+    <script type="text/javascript">
+        function picOnClick(){
+            x = document.getElementByClass("fav_fruits_photos");
+            x.outline.style=none;
+        }
+    </script>
     <!---The blue bar on the top of the html--->
     <!--<img src="222.jpg" class="hyu_logo">-->
     <div class="top_bar">
@@ -96,16 +102,22 @@
         <label>My Favourite Food</label>
         <ul id="fav_fruits">
             <li>
-                <label>lychee</label>
-                <img src="lychee.jpg" alt="lychee" class="fav_fruits_photos">
+                <a href="https://en.wikipedia.org/wiki/Lychee" target="_blank"onclick="picOnClick()">
+                    <img src="lychee.jpg" alt="lychee" class="fav_fruits_photos">
+                    <label>lychee</label>
+                </a>
             </li>
             <li>
-                <label>longan</label>
-                <img src="longan.jpg" alt="longan" class="fav_fruits_photos">
+                <a href="https://en.wikipedia.org/wiki/Longan"target="_blank">
+                    <img src="longan.jpg" alt="longan" class="fav_fruits_photos">
+                    <label>longan</label>
+                </a>
             </li>
             <li>
-                <label>wampee</label>
-                <img src="wampee.jpg" alt="wampee" class="fav_fruits_photos">
+                <a href="https://en.wikipedia.org/wiki/Clausena_lansium"target="_blank">
+                    <img src="wampee.jpg" alt="wampee" class="fav_fruits_photos">
+                    <label>wampee</label>
+                </a>
             </li>
         </ul>
     </div>
