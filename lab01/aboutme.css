@@ -1,0 +1,93 @@
+ol{
+    list-style: none;
+    counter-reset: line 4;
+}
+ol>li::before{
+    counter-increment: line -1;
+    content: counter(line)".";
+}
+.name {
+    font-style: italic;
+    font-size: 50px;
+}
+.self-intro{
+    padding-left: 100px;
+    font-style: oblique;
+}
+.intro_block{
+    display: inline;
+}
+.self_intro_pic{
+    width: 160px;
+    height: 140px;
+    padding-left: 30px;
+}
+.top_bar {
+        width: 100%;
+        height: 50px;
+        background-color: rgba(50, 235, 245);
+        font-size: 12px;
+}
+.top_bar_table {
+    margin:0 auto;
+    width: 1200px;
+    height:35px;
+    padding-left: 30px;
+}
+.top_bar_accounts_link {
+    float: right;
+    color: #ffffff;
+    padding-right: 400px;
+    line-height: 45px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+.top_bar_introduction {
+    float: left;
+    padding-left: 90px;
+}
+.top_bar_intro_cont {
+    float: left;
+    height: 20px;
+    line-height: 24px;
+    padding-top: 15px;
+    text-indent: 9px;
+    font-family: serif;
+    font-size: 50px;
+    color: rgba(255, 255, 255);
+}
+.top_bar_hych_cont {
+    line-height: 50px;
+}
+.reversed_order_listyle{
+    list-style-type: lower-roman;
+}
+.fav_fruits_photos{
+    width:150px;
+    height:80pt;
+}
+ul#fav_fruits li{
+    display: inline;
+    padding-left: 60px;
+}
+table#fun_facts_title tr{
+    text-align: center;
+    font-weight: 200;
+}
+
+.fun_facts_cont{
+    font-size: 18px;
+    margin-left: 40px;
+    font-weight:200;
+}
+.video_set{
+    width: 640px;
+    height: 400px;
+    padding-left:40opx;
+}
+.video_text{
+    font-size: 10px;
+    padding-left: 50px;
+    font-style: oblique;
+}
