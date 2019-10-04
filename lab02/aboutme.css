@@ -20,32 +20,16 @@ ol>li::before{
     height: 150px;
     align-items: center;
 }
-body a{
-    color: #FF4F4F;
-}
+
 body a:hover{
     text-decoration:underline;
 }
 a:link{
-    color:blue;
+    color:white;
     text-decoration: none;
 }
-a:active{
-    color:#F60;
-    text-decoration: underline;
-}
-a:visited{
-    color:yellow;
-}
-a>img:link{
-    outline-style: ridge;
-    outline-color: #F7931E;
-    outline-width: medium;
-}
-a>img:visited{
-    outline-style: none;
-    outline-color: #000000;
-    outline-width: inherit;
+a{
+    color:#FF4F4F;
 }
 dt,em{
     color:#FFF86B;
