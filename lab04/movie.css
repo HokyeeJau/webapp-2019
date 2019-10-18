@@ -2,6 +2,7 @@ body{
     background-image: url("background.png");
     font-family: Verdana, Tahoma, sans-serif;
     width: 100%;
+    margin:0;
 }
 dl{
     padding: 10pt;
@@ -18,9 +19,13 @@ ul{
 }
 h1{
     text-align: center;
-    font-size: 24pt bold;
+    font-size: 24pt;
+    font-weight:bold;
     font-family: Tahoma, Verdana, sans-serif;
     text-shadow: 3px 3px #999999;
+}
+span{
+    font-style: italic;
 }
 q{
     float:left;
@@ -48,13 +53,6 @@ q{
     right: 0px;
     opacity: 0.5;
 }
-body>div>div.last{
-    background-color: #A2B964;
-    width:800px;
-    height:15px;
-    font-size: 15px;
-    bottom:0px;
-}
 .left{
     width: 550px;
     float: left;
@@ -71,22 +69,18 @@ body>div>div.last{
     margin: 0 auto;
     border: 4px gray solid;
     border-radius: 20px;
-    overflow: auto;
-}
-.review_content{
-    font-size: 8pt;
-    font-weight: bold;
-    background-color: #E8DC9B;
-    border:2px gray solid;
-    border-radius: 10px;
     overflow: hidden;
-    padding:8px;
-    word-wrap: break-word;
+}
+.last{
+    bottom: 0px;
+    display: block;
+    font-size: 8pt;
 }
 .box{
     width:47%;
-    text-align:justify;
+    text-align:left;
     margin:2%;
+    margin-top:0;
 }
 img[src*="rottenbig.png"]{
     vertical-align:middle;
@@ -95,15 +89,39 @@ img[src*="rottenbig.png"]{
 img[src*="fresh.gif"], img[src*="rotten.gif"]{
     margin:5px;
     float:left;
+    vertical-align: bottom;
 }
 
 img[src*="critic.gif"]{
     margin-left: 5px;
     float: left;
 }
-p:last-child{
-    color: red;
-}
 body>div>div>div:nth-child(2n+2){
     float:right;
+}
+p:nth-child(2n+1){
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #E8DC9B;
+    border:2px gray solid;
+    border-radius: 10px;
+    overflow: hidden;
+    padding:8px;
+    text-align: justify;
+}
+p:nth-child(2n+2){
+    font-size: 8pt;
+    font-weight: normal;
+}
+p[class*="last"]{
+    border:none;
+    background-color: #A2B964;
+    bottom:0px;
+    border-radius: 0;
+    font-weight: normal;
+    width:800px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    padding:5px;
 }
