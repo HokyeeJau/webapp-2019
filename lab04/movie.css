@@ -30,6 +30,7 @@ span{
 q{
     float:left;
     text-align: left;
+    display: contents;
 }
 .top_banner{
     background-image: url("bannerbg.png");
@@ -90,6 +91,7 @@ img[src*="fresh.gif"], img[src*="rotten.gif"]{
     margin:5px;
     float:left;
     vertical-align: bottom;
+    clear: both;
 }
 
 img[src*="critic.gif"]{
