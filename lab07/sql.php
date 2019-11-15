@@ -8,12 +8,15 @@
         <?php
         $db = new PDO("mysql:dbname=simpsons;host=localhost",'root','root');
         $rows = $db->query("SELECT * from teachers;");
+        echo "<ul>";
         foreach($rows as $row){
-                foreach($row as $ele){
-                    print $ele." ";
-                }
-                print "\n";
+            echo "<li>";
+            foreach($row as $ele){
+                print $ele." ";
+            }
+            echo "</li>";
         }
+        echo "</ul>";
          ?>
     </body>
 </html>
